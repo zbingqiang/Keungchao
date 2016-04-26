@@ -1,16 +1,17 @@
-﻿Build started 2016/4/9 10:02:27.
-     1>Project "F:\Program\C++\Alg\Keungchao\Keungchao\Keungchao.vcxproj" on node 2 (Build target(s)).
+﻿生成启动时间为 2016/4/26 11:27:59。
+     1>项目“E:\Git\Keungchao\Keungchao\Keungchao\Keungchao.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         D:\Programme\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt D:\Git\Sort\Sort\Sort.cpp
-         Sort.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+         Main.cpp
        Link:
-         D:\Programme\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Program\C++\Alg\Keungchao\Debug\Keungchao.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\Program\C++\Alg\Keungchao\Debug\Keungchao.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Program\C++\Alg\Keungchao\Debug\Keungchao.lib" /MACHINE:X86 Debug\Sort.obj
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Git\Keungchao\Keungchao\Debug\Keungchao.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Git\Keungchao\Keungchao\Debug\Keungchao.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Git\Keungchao\Keungchao\Debug\Keungchao.lib" /MACHINE:X86 Debug\exam.obj
+         Debug\Sort.obj
          Debug\KMP.obj
+         Debug\Leetcode.obj
          Debug\Main.obj
-         Debug\sushu.obj
-         Keungchao.vcxproj -> F:\Program\C++\Alg\Keungchao\Debug\Keungchao.exe
-     1>Done Building Project "F:\Program\C++\Alg\Keungchao\Keungchao\Keungchao.vcxproj" (Build target(s)).
+         Keungchao.vcxproj -> E:\Git\Keungchao\Keungchao\Debug\Keungchao.exe
+     1>已完成生成项目“E:\Git\Keungchao\Keungchao\Keungchao\Keungchao.vcxproj”(Build 个目标)的操作。
 
-Build succeeded.
+生成成功。
 
-Time Elapsed 00:00:01.17
+已用时间 00:00:01.52

@@ -21,10 +21,13 @@
     <ClCompile Include="KMP.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="sushu.cpp">
+    <ClCompile Include="Leetcode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Git\Sort\Sort\Sort.cpp">
+    <ClCompile Include="exam.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\Sort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,37 +35,31 @@
     <ClInclude Include="KMP.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="insert_sort.h">
+    <ClInclude Include="MyMap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Acculate.h">
+    <ClInclude Include="Mylist.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="sortTwoArray.h">
+    <ClInclude Include="MyVector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="min.h">
+    <ClInclude Include="MySet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="twoSort.h">
+    <ClInclude Include="Leetcode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Find1FromInt.h">
+    <ClInclude Include="MyHashMap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Power.h">
+    <ClInclude Include="exam.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Print.h">
+    <ClInclude Include="reverse_word.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="sushu.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="reserve.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="D:\Git\Sort\Sort\Sort.h">
+    <ClInclude Include="J:\Sort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

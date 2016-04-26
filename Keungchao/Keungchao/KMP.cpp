@@ -43,7 +43,6 @@ void GetNext(char* p, int next[])
 	while (j < pLen - 1)
 	{
 		//p[k]表示前缀，p[j]表示后缀
-
 		//匹配是从后面的字符串中找到与开始相匹配的字符串，头k用来迭代
 		//当匹配时，对应的next加1，不匹配时，k=next[k]进行迭代
 		if (k == -1 || p[j] == p[k])

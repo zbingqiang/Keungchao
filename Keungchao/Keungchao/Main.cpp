@@ -3,47 +3,97 @@
 #include<deque>
 #include<list>
 #include<map>
-#include "KMP.h"
-#include "insert_sort.h"
-#include "Acculate.h"
 #include<iterator>
 #include<vector>
 #include<string>
 #include<set>
-#include "min.h"
-#include "twoSort.h"
-#include "Find1FromInt.h"
-#include "Power.h"
-#include "Print.h"
-#include "sushu.h"
+#include<hash_map>
+#include<hash_set>
+#include<sstream>
+#include<cctype>
+
+#include "MySet.h"
+#include "MyMap.h"
+#include "MyHashMap.h"
+#include "exam.h"
+#include "KMP.h"
+#include "Leetcode.h"
+
 using namespace std;
-
-//int gcd(int a, int b);
-
-//template <class T> int getArrayLen(T & array)
-//{
-//	return (sizeof(array) / sizeof(array[0]));//对字符串sizeof(array[0]-1);
-//}
-
-typedef map<string, int> StringIntMap;
-
 
 int main()
 {
-	
-		//string str;
-		//cin >> str;
-		//set<char> result;
-		//for (auto index = str.cbegin(); index < str.cend(); ++index)
-		//	result.insert(*index);
-		//for (auto v : result)
-		//	cout << v << " ";
-	list<int> ss;
 
+	//华为机试消星星简化版的实现，只对其中一行进行实现
+	/*vector<int> test = { 1, 4, 4 ,5, 3, 3, 3, 5, 5, 4 };
+	vector<int> result = remove_start(test);
+	for (auto v : result)
+		cout << v << " ";*/
+	//string test = "adadc";
+	//cout << first_unrepeat1(test) << endl;
+	//int a[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+	/*deque<int> test;
+	test.push_back(1);
+	int &s = test.back();
+	test.push_back(2);
+	cout << s << endl;*/
+	//string test = "1ssss1";
+	//for (auto v : test)
+	//{
+	//	if (isdigit(v) != 0)  //isdigit()，返回的是int型的，若不是数字返回0，否则返回非0的int型，判断：if(isdigit(num[i]) != 0)
+	//		cout << v << endl;
+	//}
+		
+	//funHashMap();
+	//Leetcode test;
+	//cout << test.isHappy(2) <<endl;
+	//funMap();
+	// sort array using algorithm
+	/*int num[] = { 1, 4, 2, 4, 2, 7, 4, 6, 5 };
+	sort(num + 1, num + 9);
+	for (size_t i = 0; i < sizeof(num) / sizeof(num[0]); ++i)
+		cout << num[i] << " ";*/
+	//京东第一题，2016.4.7晚
+	/*int n, s, p, q;
+	char classify;
+	map<int, int> buy, sale;
+	cin >> n >> s;
+	while (0 != n--)
+	{
+	cin >> classify >> p >>q;
+	if ('S' == classify)
+	sale[p] += q;
+	else if ('B' == classify)
+	buy[p] += q;
+	}
 
+	if ( buy.size() + sale.size() <= s)
+	{
+	for (auto ibeg = sale.begin(); ibeg != sale.end(); ++ibeg)
+	{
+	cout << "S " << (*ibeg).first << " " << (*ibeg).second << endl;
+	}
+	for (auto ibeg = buy.rbegin(); ibeg != buy.rend(); ++ibeg)
+	{
+	cout << "B " << (*ibeg).first << " " << (*ibeg).second << endl;
+	}
+	}
+	else
+	{
+	int size = 0;
+	for (auto beg = sale.rbegin(); (beg != sale.rend()) && (size < s); ++beg, ++size)
+	{
+	cout << "S " << (*beg).first << " " << (*beg).second << endl;
+	}
+	size = 0;
+	for (auto ibeg = buy.rbegin(); ibeg != buy.rend() && (size < s); ++ibeg, ++size)
+	{
+	cout << "B " << (*ibeg).first << " " << (*ibeg).second << endl;
+	}
+	}*/
 	/*
 	set<string> coll((istream_iterator<string>(cin)),
-						(istream_iterator<string>()));	
+	(istream_iterator<string>()));
 	copy(coll.begin(), coll.end(), ostream_iterator<string>(cout, "\n"));*/
 	/*char test1[] = { '1', '2', '3' };
 	char test2[] = { '1', '2', '3' };
@@ -55,26 +105,17 @@ int main()
 	cin >> str;
 	for (auto &v : str)
 	{
-		v = tolower(v);
-		++result[v];
-	}	
+	v = tolower(v);
+	++result[v];
+	}
 	for (auto v : result)
-		cout << v.first << " " << v.second << endl;*/
+	cout << v.first << " " << v.second << endl;*/
 	//int array[] = { 1, 3, 6, 4, 7, 2 };
 	//sort(array, array + 6);
 	//cout << "-------------------Output of array----------------------" << endl;
 	//for (int i = 0; i < 6; ++i)
 	//	cout << array[i] << " ";
 	//cout << endl;
-
-	//map<string, int> test ;
-	//test.insert(pair<string, int>("Keungchao", 24));
-	//test.insert(pair<string, int>("Dany", 23));
-	//test.insert(pair<string, int>("yjw", 23));
-	//test.insert(pair<string, int>("gjr", 22));
-	//test.insert(map<string, int>::value_type("hw", 22.3));
-	//test.insert(StringIntMap::value_type("xl", 50));
-	//test.insert(make_pair("sc", 22));
 
 	//cout << "---------------------The original information-------------" << endl;
 	//for (auto v : test)
@@ -109,7 +150,7 @@ int main()
 	/*char str[] = "ABCDABD";
 	char test[] = "D";
 	cout << KMP(str, test) << endl;;*/
-	
+
 	/*float str = 2.56666;
 	int str_int=static_cast<int>(str);
 	cout << str_int << endl;*/
@@ -159,57 +200,11 @@ int main()
 
 	for (i = 0; x > 8; y = i++)
 	{
-		printf(" %d, %d,", x--, y);
+	printf(" %d, %d,", x--, y);
 	}*/
 
-
-	//vector<int> test2 = {1, 2, 3, 4, 5, 3, 4, 3};
-	//copy(test2.begin(), test2.end(), ostream_iterator<int>(cout, " "));
-	//cout << endl;
-	////移除所有值为3的元素
-	//test2.erase(remove(test2.begin(), test2.end(), 3), test2.end());
-	//copy(test2.cbegin(), test2.cend(), ostream_iterator<int>(cout, " "));
 	
-	/*set<int> test1 = { 1, 5, 1, 3, 5 };
-	test1.find(1);
-	cout << test1.count(1) << endl;
-	cout<<*test1.insert(test1.begin(), 1)<<endl;*/
-	//pair<set<int>::iterator, bool> status;
-	//status = test1.insert(2);
-	//if (status.second)
-	//{
-	//	cout << "inserted as element";
-	//}
-	//else
-	//{
-	//	cout << "already exists as element";
-	//}
-	//cout << *test1.lower_bound(4) << endl;
-	//cout << *test1.upper_bound(4) << endl;
-	////在multiset中应用
-	//cout << *test1.equal_range(4).first << " "
-	//	<< *test1.equal_range(4).second << endl;
-
 	//deque<int> test;
-	//list<int> list1(test.begin(),test.end());
-	//list1.push_back(2);
-	//list1.push_front(1);
-	//copy(list1.cbegin(), list1.cend(), ostream_iterator<int>(cout, " "));
-	//cout << endl;
-	//vector<int> test1 = { 2, 3, 5, 6, 6, 7, 8 };
-	////list1.assign(test1.cbegin(), test1.cend());
-	//list<int> list2(test1.begin(), test1.end());
-	////list1.splice(list1.begin(), list2, list2.cbegin(), list2.cend());
-	//list1.merge(list2);
-	//copy(list1.cbegin(), list1.cend(), ostream_iterator<int>(cout, " "));
-	//cout << endl;
-	//list1.sort();
-	//copy(list1.cbegin(), list1.cend(), ostream_iterator<int>(cout, " "));
-	//cout << endl;
-	//list1.unique();
-	//copy(list1.cbegin(), list1.cend(), ostream_iterator<int>(cout, " "));
-	//cout << endl;
-
 	//cout << endl;
 	////copy(test2.rbegin(), test2.rend(), ostream_iterator<int>(cout, " "));
 	//cout << endl;
@@ -235,56 +230,135 @@ int main()
 	//vector<int> teee(n);
 	//copy(teee.begin(), teee.end(), ostream_iterator<int>(cout, " "));
 
-/*string str;
-cin >> str;
-multimap<char, int> result = reOrder(str);
-multimap<char, int>::iterator ibeg = result.begin();
-for (size_t i = 0; i < str.size(); ++i)
-{
-if (str[i] == 'U')
-cout << 'U';
-else
-{
-cout << str[(*ibeg).second];
-++ibeg;
-}
-}
-cout << endl;*/
+	//std::string str;
+	//cin >> str;
+	//cout << str << endl;
+	//std::string str2 = "Writing";
+	//cout << str2.length() << endl;
+	//cout << str2.size() << endl;
+	//std::string str3 = "print 10 and then 5 more";
 
+	//// used in the same order as described above:
+	//str.append(str2);                       // "Writing "
+	//str.append(str3, 6, 3);                   // "10 "
+	//str.append("dots are cool", 5);          // "dots "
+	//str.append("here: ");                   // "here: "
+	//str.append(10u, '.');                    // ".........."
+	//str.append(str3.begin() + 8, str3.end());  // " and then 5 more"
+	//str.push_back('k');
+	//std::cout << str << '\n';
 
-//std::string str;
-//cin >> str;
-//cout << str << endl;
-//std::string str2 = "Writing";
-//cout << str2.length() << endl;
-//cout << str2.size() << endl;
-//std::string str3 = "print 10 and then 5 more";
+	/*string str1 = "1111";
+	char *p = str1.c_str();*/
 
-//// used in the same order as described above:
-//str.append(str2);                       // "Writing "
-//str.append(str3, 6, 3);                   // "10 "
-//str.append("dots are cool", 5);          // "dots "
-//str.append("here: ");                   // "here: "
-//str.append(10u, '.');                    // ".........."
-//str.append(str3.begin() + 8, str3.end());  // " and then 5 more"
-//str.push_back('k');
-//std::cout << str << '\n';
-
-/*string str1 = "1111";
-char *p = str1.c_str();*/
-
-//cout << k << endl;
-/*vector<string> data;
-int i = 0;
-string str;
-while (getline(cin, str, ','))
-data.push_back(str);
-for (auto v : str)
-cout << v;*/
-//string str = " ";
-//cout << lengthOfLastWord(str) << endl;
+	//cout << k << endl;
+	/*vector<string> data;
+	int i = 0;
+	string str;
+	while (getline(cin, str, ','))
+	data.push_back(str);
+	for (auto v : str)
+	cout << v;*/
+	//string str = " ";
+	//cout << lengthOfLastWord(str) << endl;
 
 	system("pause");
 	return 0;
 }
 
+//int gcd(int a, int b);
+//template <class T> int getArrayLen(T & array)
+//{
+//	return (sizeof(array) / sizeof(array[0]));//对字符串sizeof(array[0]-1);
+//}
+
+//vector<int> getPartition(const vector<vector<int> >& land, int n, int m) {
+//	// write code here
+//	vector<int> sum(n + 1);
+//	for (int k = 0; k <= n; ++k)
+//	{
+//		vector<int> a(n, 1);
+//		for (int k2 = 0; k2 < k; ++k2)
+//			a[k2] = 0;
+//		for (int i = 0; i<m; ++i)
+//			for (int j = 0; j<n; ++j)
+//			{
+//				sum[k] += abs(land[i][j] - a[j]);
+//			}
+//	}
+//	int min = sum[0],index = 0;
+//	for (int i = 1; i <= n; ++i)
+//	{
+//		if (sum[i]<min)
+//		{
+//			min = sum[i];
+//			index = i;
+//		}
+//		else
+//			continue;
+//	}
+//	vector<int> result(2);
+//	result[0] = index;
+//	result[1] = index + 1;
+//	return result;
+//}
+//
+//struct TreeNode {
+//	int val;
+//	struct TreeNode *left;
+//	struct TreeNode *right;
+//	TreeNode(int x) :
+//		val(x), left(NULL), right(NULL) {
+//	}
+//};
+//
+//set<int, greater<int>> MaxLen;
+//set<int, greater<int>>::iterator iter;
+//
+//int myfindPath(TreeNode *root)
+//{
+//	int Num = 1, Numleft = 0, Numright = 0;
+//	if (root->left != NULL)
+//	{
+//		Numleft = findPath(root->left);
+//		if (root->val == root->left->val)
+//			Num += Numleft;
+//	}
+//	if (root->right != NULL)
+//	{
+//		Numright = findPath(root->right);
+//		if (root->val == root->right->val)
+//			Num += Numright;
+//	}
+//	MaxLen.insert(Num);
+//	return max(Num - Numleft, Num - Numright);
+//}
+//
+//int findPath(TreeNode* root) {
+//	// write code here
+//	myfindPath(root);
+//	iter = MaxLen.begin();
+//	return *iter;
+//}
+
+//string trans(string s, int n) {
+//	// write code here
+//	string::iterator pre = s.begin(), end = s.end(), i = pre;
+//	while (i != end )
+//	{
+//		i = find(pre, end, ' ');
+//		reverse(pre, i);
+//		for (auto ibeg = pre; ibeg != i; ++ibeg)
+//		{
+//			if (*ibeg >= 'a' && *ibeg <= 'z')
+//				*ibeg -= 32;
+//			else if (*ibeg >= 'A' && *ibeg <= 'Z')
+//				*ibeg += 32;
+//		}
+//		pre = i + 1;
+//	}
+//
+//	reverse(s.begin(), s.end());
+//	return s;
+//
+//}
