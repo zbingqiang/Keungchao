@@ -86,5 +86,78 @@ string decode(string & str)
 	return result;
 }
 
+vector<int> FindNumbersWithSum(vector<int> array, int sum) {
+	vector<int> result;
+	int goal;
+	for (auto ibeg = array.begin(); ibeg != array.end() - 1; ++ibeg)
+	{
+		goal = sum - *ibeg;
+		if (goal < *ibeg || goal > array.back())
+			return result;
+		else
+			for (auto jbeg = ibeg + 1; jbeg != array.end(); ++jbeg)
+			{
+				if (goal == *jbeg)
+				{
+					result.push_back(*ibeg);
+					result.push_back(*jbeg);
+					return result;
+				}
+			}
+	}
+	return result;
+}
 
 
+bool solution(string &S, string &T)
+{
+	int index = 0;
+	string temp(100, '0');
+
+	for (size_t ibeg = 0; ibeg < T.size();)
+	{
+		int beg = ibeg;
+		int num = 0;
+		while (T[ibeg++] >= '0' && T[ibeg++] <= '9')
+			;
+		while (beg != ibeg)
+		{
+			num = 10 * num + T[beg] - '0';
+			++beg;
+		}
+
+		for (size_t j = 0; j < num; ++j)
+			temp[index++] = '?';
+
+		if (T[ibeg] < '0' || T[ibeg] > '9')
+		{
+			temp[index] = T[ibeg];
+			++index;
+			++ibeg;
+		}
+	}
+
+	cout << temp << endl;
+	index = 0;
+	for (size_t jbeg = 0; jbeg < S.size(); ++jbeg)
+	{
+		int end = jbeg;
+		int num = 0;
+		while (T[jbeg] >= '0' && T[jbeg] <= '9')
+			++end;
+		while (jbeg != end)
+		{
+			num = 10 * num + T[jbeg] - '0';
+			++jbeg;
+		}
+		if (S[jbeg] < '0' || S[jbeg] > '9')
+		{
+			if (S[jbeg] != temp[index])
+				return false;
+			++index;
+		}
+		else
+			jbeg += num;
+	}
+	return true;
+}

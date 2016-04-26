@@ -27,7 +27,7 @@
     <ClCompile Include="exam.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="J:\Sort.cpp">
+    <ClCompile Include="Sort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -59,7 +59,7 @@
     <ClInclude Include="reverse_word.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="J:\Sort.h">
+    <ClInclude Include="Sort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

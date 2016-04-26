@@ -10,7 +10,6 @@
 
 #define aim_len 10
 
-
 //  找到一组数组中最大相同前缀后缀长度值
 //  原理：
 void GetNext(char* p, int next[]);

@@ -1,17 +1,22 @@
-﻿生成启动时间为 2016/4/26 11:27:59。
-     1>项目“E:\Git\Keungchao\Keungchao\Keungchao\Keungchao.vcxproj”在节点 2 上(Build 个目标)。
+﻿Build started 2016/4/26 15:19:13.
+     1>Project "D:\Git\Keungchao\Keungchao\Keungchao\Keungchao.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+         D:\Programme\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp exam.cpp
+         exam.cpp
+     1>d:\git\keungchao\keungchao\keungchao\exam.cpp(129): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+         Compiling...
          Main.cpp
+         Generating Code...
        Link:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Git\Keungchao\Keungchao\Debug\Keungchao.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Git\Keungchao\Keungchao\Debug\Keungchao.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Git\Keungchao\Keungchao\Debug\Keungchao.lib" /MACHINE:X86 Debug\exam.obj
-         Debug\Sort.obj
+         D:\Programme\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Git\Keungchao\Keungchao\Debug\Keungchao.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Git\Keungchao\Keungchao\Debug\Keungchao.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Git\Keungchao\Keungchao\Debug\Keungchao.lib" /MACHINE:X86 Debug\exam.obj
          Debug\KMP.obj
          Debug\Leetcode.obj
          Debug\Main.obj
-         Keungchao.vcxproj -> E:\Git\Keungchao\Keungchao\Debug\Keungchao.exe
-     1>已完成生成项目“E:\Git\Keungchao\Keungchao\Keungchao\Keungchao.vcxproj”(Build 个目标)的操作。
+         Debug\Sort.obj
+         Keungchao.vcxproj -> D:\Git\Keungchao\Keungchao\Debug\Keungchao.exe
+     1>Done Building Project "D:\Git\Keungchao\Keungchao\Keungchao\Keungchao.vcxproj" (Build target(s)).
 
-生成成功。
+Build succeeded.
 
-已用时间 00:00:01.52
+Time Elapsed 00:00:02.50

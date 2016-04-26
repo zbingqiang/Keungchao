@@ -65,14 +65,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="exam.cpp" />
-    <ClCompile Include="J:\Sort.cpp" />
     <ClCompile Include="KMP.cpp" />
     <ClCompile Include="Leetcode.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Sort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="exam.h" />
-    <ClInclude Include="J:\Sort.h" />
     <ClInclude Include="reverse_word.h" />
     <ClInclude Include="KMP.h" />
     <ClInclude Include="Leetcode.h" />
@@ -81,6 +80,7 @@
     <ClInclude Include="MyMap.h" />
     <ClInclude Include="MySet.h" />
     <ClInclude Include="MyVector.h" />
+    <ClInclude Include="Sort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

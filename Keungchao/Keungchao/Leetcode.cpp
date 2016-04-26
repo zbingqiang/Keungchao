@@ -1,6 +1,8 @@
 #include "Leetcode.h"
 #include<set>
+#include<vector>
 #include<math.h>
+
 using namespace std;
 
 Leetcode::Leetcode()

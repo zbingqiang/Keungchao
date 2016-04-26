@@ -26,3 +26,10 @@ char first_unrepeat2(string & str); //方法2利用字符的ASCII作为数组的下标进行搜索
 // 2：对字符串进行解码输出
 string decode(string & str); // 特殊情况：出现的数字可能为多位
 
+//从数组中找到两个元素使得和为sum，如果存在多个，则输出下标小的
+vector<int> FindNumbersWithSum(vector<int> array, int sum);
+
+//两个字符串是否相同，其中出错的字符用？号表示
+
+// 注意点同优酷土豆中：数字可能为多位
+bool solution(string &S, string &T);
