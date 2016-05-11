@@ -59,7 +59,7 @@ char first_unrepeat2(string & str)
 	for (auto v : str)
 	if (1 == count[v])
 		return v;
-	return str[0]; //在不存在的情况下，即全相同时的处理
+	return '#'; //在不存在的情况下，即全相同时的处理
 }
 
 // 优酷土豆：解码
@@ -160,4 +160,48 @@ bool solution(string &S, string &T)
 			jbeg += num;
 	}
 	return true;
+}
+
+void replaceSpace(char *str, int length) {
+	// 不需要扩容
+	if (0 == length)
+		return;
+	int count = 0;
+	for (int i = 0; i < length; ++i)
+		if (' ' == str[i])
+			++count;
+	int index = length + 2 * count - 1;
+	for (int i = length - 1; i >= 0; --i)
+	{
+		if (' ' == str[i])
+		{
+			str[index--] = '0';
+			str[index--] = '2';
+			str[index--] = '%';
+		}
+		else
+			str[index--] = str[i];
+	}
+}
+
+struct ListNode {
+	int val;
+	struct ListNode *next;
+	ListNode(int x) :
+		val(x), next(NULL) {
+	}
+};
+
+vector<int> printListFromTailToHead(struct ListNode* head) {
+	vector<int> result;
+	if (NULL == head)
+		return result;
+	ListNode* search = head;
+	while (search != NULL)
+	{
+		result.push_back(search->val);
+		search = search->next;
+	}
+	reverse(result.begin(), result.end());
+	return result;
 }

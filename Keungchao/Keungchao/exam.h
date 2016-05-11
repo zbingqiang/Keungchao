@@ -30,6 +30,10 @@ string decode(string & str); // 特殊情况：出现的数字可能为多位
 vector<int> FindNumbersWithSum(vector<int> array, int sum);
 
 //两个字符串是否相同，其中出错的字符用？号表示
-
 // 注意点同优酷土豆中：数字可能为多位
 bool solution(string &S, string &T);
+
+//替换字符串中的空格为"%20"
+void replaceSpace(char *str, int length);
+
+vector<int> printListFromTailToHead(struct ListNode* head);

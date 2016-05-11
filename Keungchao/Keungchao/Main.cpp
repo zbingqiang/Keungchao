@@ -12,6 +12,7 @@
 #include<sstream>
 #include<cctype>
 
+#include "MyVector.h"
 #include "MySet.h"
 #include "MyMap.h"
 #include "MyHashMap.h"
@@ -23,7 +24,13 @@ using namespace std;
 
 int main()
 {
-
+	//funVector();
+	/*char test[] = "hellow world";
+	int length = sizeof(test) / sizeof(test[0]);
+	replaceSpace(test, length);
+	for (int i = 0; i < length + 2; ++i)
+		cout << test[i];
+	cout << endl;*/
 	//华为机试消星星简化版的实现，只对其中一行进行实现
 	/*vector<int> test = { 1, 4, 4 ,5, 3, 3, 3, 5, 5, 4 };
 	vector<int> result = remove_start(test);
